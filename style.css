@@ -78,7 +78,7 @@ input[type=text], input[type=number], input[type=url]{
 }
 
 .book-read-smaller{
-  padding: 4px 10px;
+  padding: 2px 10px;
   margin-top: 5px;
   width: 4vw;
 }
@@ -104,6 +104,7 @@ input[type=submit]:hover {
   display: grid;
   grid-template-rows: repeat(3, 1fr);
   grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
 }
 
 .book{
@@ -111,11 +112,15 @@ input[type=submit]:hover {
   grid-template-columns: 0.3fr 0.7fr;
   grid-template-rows: 1fr;
   gap: 10px;
+  background-color: #52525b;
+  border: none;
+  border-radius: 10px;
 }
 
 .book img{
   height: 10vw;
   width: auto;
+  border-radius: 10px;
 }
 
 
