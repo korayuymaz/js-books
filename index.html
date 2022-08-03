@@ -31,7 +31,7 @@
       </div>
       <div class="books">
         <div class="book">
-          <img src="https://images-na.ssl-images-amazon.com/images/I/81qICU76srL.__AC_SX300_SY300_QL70_ML2_.jpg" alt="book-case">
+          <img src="https://images-na.ssl-images-amazon.com/images/I/81qICU76srL.__AC_SX300_SY300_QL70_ML2_.jpg" alt="book-case"/>
           <div class="book-details">
             <div class="title">
               <div>Title</div>
@@ -45,7 +45,10 @@
               <div>Number of Pages</div>
               <div>750</div>
             </div>
-            <button type="button" class="book-read-smaller">Read</button>
+            <div class="buttons">
+              <button id="1" type="button" class="book-read" onclick="readBook(this.id)">Read</button>
+              <button id="1-Ciaphas" type="button" class="book-delete" onclick="deleteBook(this.id)">Delete</button>
+            </div>
           </div>
         </div>
       </div>
