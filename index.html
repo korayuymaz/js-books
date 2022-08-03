@@ -4,21 +4,56 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Source+Code+Pro:wght@200&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <title>Library</title>
 </head>
 <body>
-  <div class="wrapper">
+  <div class="container">
     <div class="header">
-      This is my header
+      <a href="">My Library</a>
     </div>
     <div class="content">
-      <div class="pop-up">This will be pop-up button</div>
-      <div class="books">This will be books grid.</div>
+      <div class="input-area">
+        <form action="">
+          <label for="title">Title</label>
+          <input type="text" id="title" placeholder="Your books title..." required>
+          <label for="author">Author</label>
+          <input type="text" id="auhor" placeholder="Your books author..." required>
+          <label for="pages">Number of Pages</label>
+          <input type="number" id="pages" placeholder="Your books number of pages..." required>
+          <label for="book-case">Book Case</label>
+          <input type="url" id="book-case" placeholder="Your book-case url..." required>
+          <button class="book-read" onclick="bookRead()">Read</button>
+          <input id="submit" type="submit" name="submit" value="Submit">
+        </form>
+      </div>
+      <div class="books">
+        <div class="book">
+          <img src="https://images-na.ssl-images-amazon.com/images/I/81qICU76srL.__AC_SX300_SY300_QL70_ML2_.jpg" alt="book-case">
+          <div class="book-details">
+            <div class="title">
+              <div>Title</div>
+              <div>Ciaphas Cain Hero of The Imperium</div>
+            </div>
+            <div class="author">
+              <div>Author</div>
+              <div>Sandy Mitchell</div>
+            </div>
+            <div class="number-of-pages">
+              <div>Number of Pages</div>
+              <div>750</div>
+            </div>
+            <button class="book-read-smaller" onclick="bookRead()">Read</button>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="footer">
-
     </div>
   </div>
+  <script type="text/javascript" src="index.js"></script> 
 </body>
 </html>

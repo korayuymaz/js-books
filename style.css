@@ -1,0 +1,140 @@
+body{
+  --font-header: 3vw;
+  --font-text-header: 2vw;
+  --font-text-small: 1vw;
+  --font-text-smaller: 0.8vw;
+
+  --font-color: #f4f4f5;
+
+  --font-family: 'Roboto', sans-serif;
+
+
+  background-color: #27272a;
+  margin: 0;
+  font-family: var(--font-family);
+  color: var(--font-color)
+
+}
+
+
+.container{
+  margin: auto;
+  width: 80vw;
+}
+
+.header{
+  font-size: var(--font-header);
+  font-weight: 900;
+  text-align: center;
+}
+
+.header a{
+  text-decoration: none;
+  color: var(--font-color);
+}
+
+.content{
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: 0.2fr 0.8fr;
+  grid-row: 1fr;
+  gap: 24px;
+}
+
+form{
+  font-size: var(--font-text-small)
+}
+
+input[type=text], input[type=number], input[type=url]{
+  display: block;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: 1px solid #f4f4f5;
+  border-radius: 4px;
+  box-sizing: border-box;
+  width: 90%;
+}
+
+.book-read-smaller,
+.book-read{
+  color: black;
+  background-color: #fafafa;
+  display: block;
+  border: none;
+  border-radius: 4px;
+  width: 5vw;
+  box-sizing: border-box;
+  font-size: var(--font-text-smaller);
+}
+
+.book-read-smaller:hover,
+.book-read:hover{
+  background-color: #e4e4e7;
+}
+
+.book-read{
+  padding: 12px 20px;
+  margin-top: 16px;
+}
+
+.book-read-smaller{
+  padding: 4px 10px;
+  margin-top: 5px;
+  width: 4vw;
+}
+
+input[type=submit] {
+  background-color: #3f3f46;
+  color: #f4f4f5;
+  width: 5vw;
+  padding: 14px 20px;
+  margin-top: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: var(--font-text-smaller)
+}
+
+input[type=submit]:hover {
+  background-color: #71717a;
+}
+
+
+.books{
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.book{
+  display: grid;
+  grid-template-columns: 0.3fr 0.7fr;
+  grid-template-rows: 1fr;
+  gap: 10px;
+}
+
+.book img{
+  height: 10vw;
+  width: auto;
+}
+
+
+.title > div:first-child,
+.author > div:first-child,
+.number-of-pages > div:first-child{
+  font-weight:500;
+  font-size: var(--font-text-small);
+}
+
+.author > div:first-child,
+.number-of-pages > div:first-child{
+  margin-top: 8px
+}
+
+.title > div:last-child,
+.author > div:last-child,
+.number-of-pages > div:last-child{
+  font-weight: 100;
+  color: rgba(244,244,245, 0.7);
+  font-size: var(--font-text-smaller);
+}
