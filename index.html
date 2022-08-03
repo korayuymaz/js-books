@@ -17,7 +17,7 @@
     </div>
     <div class="content">
       <div class="input-area">
-        <form onsubmit="addBookToLibrary()">
+        <form>
           <label for="title">Title</label>
           <input type="text" id="title" placeholder="Your books title..." required>
           <label for="author">Author</label>
@@ -25,10 +25,9 @@
           <label for="pages">Number of Pages</label>
           <input type="number" id="pages" placeholder="Your books number of pages..." required>
           <label for="bookcase">Book Case</label>
-          <input type="url" id="bookcase" placeholder="Your book-case url..." required>
-          <button class="book-read" onclick="bookRead()">Read</button>
-          <button id="submit" type="submit" name="submit">Submit</button>
+          <input type="url" id="bookcase" placeholder="Your book-case url...">
         </form>
+        <button id="submit" onclick="addBookToLibrary()" >Submit</button>
       </div>
       <div class="books">
         <div class="book">
@@ -46,7 +45,7 @@
               <div>Number of Pages</div>
               <div>750</div>
             </div>
-            <button class="book-read-smaller" onclick="bookRead()">Read</button>
+            <button type="button" class="book-read-smaller">Read</button>
           </div>
         </div>
       </div>
