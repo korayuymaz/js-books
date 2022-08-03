@@ -83,7 +83,7 @@ input[type=text], input[type=number], input[type=url]{
   width: 4vw;
 }
 
-input[type=submit] {
+#submit{
   background-color: #3f3f46;
   color: #f4f4f5;
   width: 5vw;
@@ -95,7 +95,7 @@ input[type=submit] {
   font-size: var(--font-text-smaller)
 }
 
-input[type=submit]:hover {
+#submit:hover {
   background-color: #71717a;
 }
 
